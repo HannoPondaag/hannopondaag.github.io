@@ -1,6 +1,6 @@
 {
 "companyName": "TeleJazz",
-"productName": "Sliding Tile Puzzle",
+"productName": "Sliding Tiles Puzzle",
 "dataUrl": "WebGL.data.unityweb",
 "asmCodeUrl": "WebGL.asm.code.unityweb",
 "asmMemoryUrl": "WebGL.asm.memory.unityweb",
