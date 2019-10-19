@@ -1,0 +1,2 @@
+The only thing that is collected and saved in the default directory is a player's name: this might be a nick name also.
+This is done for the Hall of Fame function of the game.
