@@ -1,0 +1,14 @@
+{
+"companyName": "TeleJazz",
+"productName": "Custom Sudoku",
+"dataUrl": "webGl.data.unityweb",
+"asmCodeUrl": "webGl.asm.code.unityweb",
+"asmMemoryUrl": "webGl.asm.memory.unityweb",
+"asmFrameworkUrl": "webGl.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "webGl.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF"
+}
