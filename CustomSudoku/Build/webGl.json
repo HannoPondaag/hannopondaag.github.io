@@ -1,14 +1,13 @@
 {
-"companyName": "TeleJazz",
-"productName": "Custom Sudoku",
-"dataUrl": "webGl.data.unityweb",
-"asmCodeUrl": "webGl.asm.code.unityweb",
-"asmMemoryUrl": "webGl.asm.memory.unityweb",
-"asmFrameworkUrl": "webGl.asm.framework.unityweb",
+"companyName": "Telejazz",
+"productName": "Custom Sudoku 2020",
+"dataUrl": "WebGL.data.unityweb",
+"asmCodeUrl": "WebGL.asm.code.unityweb",
+"asmMemoryUrl": "WebGL.asm.memory.unityweb",
+"asmFrameworkUrl": "WebGL.asm.framework.unityweb",
 "TOTAL_MEMORY": 268435456,
 "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
-"backgroundUrl": "webGl.jpg",
 "splashScreenStyle": "Dark",
-"backgroundColor": "#FFFFFF"
+"backgroundColor": "#231F20"
 }
