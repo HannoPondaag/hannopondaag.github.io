@@ -1,0 +1,15 @@
+voor mensen met internet plus bellen of glasvezel van KPN:
+
+Stap 1: Ga in je browser naar http://192.168.2.1/ voor glasvezel klanten van KPN met een experia box waarschijnlijk http://192.168.2.254
+Stap 2: Log in op de Experia Box .
+Stap 3: typ je wachtwoord in, standaard is dat admin.
+Stap 4: klik dan op Ok, en klik nu op Advanced Setting.
+Stap 5: klik dan op Internet en dan klik je Address Translation (NAT)
+nu zie je ergens Exposed Host staan daar moet je ook op klikken.
+Typ daar je IP adres in van je game-pc (+ een naam), dit is voor de duidelijkheid een lokaal IP-adres uit de zgn. privereeks,
+iets in de trant van 192.168.2.x waarschijnlijk.
+Dit lokale prive-IP-adres kan je vinden door ipconfig in een opdrachtprompt-venster te typen. Het gaat hier om het zgn. IPv4 address.
+Je IP-adres van de router voor de buitenwereld, het publieke IP-adres, is dan te vinden door te surfen naar http://www.watismijnip.nl.
+Je tegenstander dient naar dit adres te verbinden als hij of zij ook KPN heeft. De verbinding is dan tot stand gekomen en je kan vervolgens spelen.
+
+Deze tip vond ik op helpmij.nl met dank aan Tijs!
