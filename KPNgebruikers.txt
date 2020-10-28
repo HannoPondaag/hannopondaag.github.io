@@ -1,4 +1,4 @@
-voor mensen met internet plus bellen of glasvezel van KPN:
+voor mensen met internet van KPN:
 
 Stap 1: Ga in je browser naar http://192.168.2.1/ voor klanten van KPN met een experia box V10a waarschijnlijk http://192.168.2.254
 Stap 2: Log in op de Experia Box .
