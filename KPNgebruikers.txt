@@ -1,10 +1,7 @@
 voor mensen met internet van KPN:
 
-Stap 1: Ga in je browser naar http://192.168.2.1/ 
-
-
-
-
+oude Experia Box:
+Stap 1: Ga in je browser naar http://192.168.2.1/ voor de wat oudere Experia Box, mocht u dit nog hebben
 Stap 2: Log in op de (Experia) Box .
 Stap 3: typ je wachtwoord in, standaard is dat admin.
 Stap 4: klik dan op Ok, en klik nu op Advanced Setting. 
@@ -15,7 +12,7 @@ Typ daar je IP adres in van je game-pc (+ een naam), dit is voor de duidelijkhei
 iets in de trant van 192.168.2.x waarschijnlijk.
 Deze tip vond ik gedeeltelijk op helpmij.nl met dank aan Tijs!
 
-experia box v10a:
+Experia box v10a:
 -voor klanten van KPN met een experia box V10a en Sagemcom box B12 waarschijnlijk http://192.168.2.254
 -kies poort forwarding ipv4
 -Bij experia box v10a poort forwarding ipv4: Vul hier je locale
