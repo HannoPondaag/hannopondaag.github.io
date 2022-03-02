@@ -39,5 +39,5 @@ Sagemcom box B12:
 -Internal port=1200-1201
 -en zorg ervoor dat de Rule aan staat (enabled)
 
-
+p.s Lees voor de Memory Games/Lingo en Vier-Op-Een-Rij, Memory Game../Lingo òf Vier-Op-Een-Rij waar'Net Memory' staat in dit document
 
