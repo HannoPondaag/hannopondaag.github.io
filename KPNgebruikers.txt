@@ -1,20 +1,43 @@
 voor mensen met internet van KPN:
 
-Stap 1: Ga in je browser naar http://192.168.2.1/ voor klanten van KPN met een experia box V10a waarschijnlijk http://192.168.2.254
-Stap 2: Log in op de Experia Box .
+Stap 1: Ga in je browser naar http://192.168.2.1/ 
+
+
+
+
+Stap 2: Log in op de (Experia) Box .
 Stap 3: typ je wachtwoord in, standaard is dat admin.
-Stap 4: klik dan op Ok, en klik nu op Advanced Setting. Bij experia box v10a op instellingen
-Stap 5: klik dan op Internet en dan klik je Address Translation (NAT). Bij experia box v10a op poort forwarding ipv4 
+Stap 4: klik dan op Ok, en klik nu op Advanced Setting. 
+Stap 5: klik dan op Internet en dan klik je Address Translation (NAT).  
 nu zie je ergens Exposed Host staan daar moet je ook op klikken.Bij experia box v10a poort forwarding ipv4: Vul hier je locale
 ip-adres in als LAN Host te verkrijgen met ipconfig in een CMD window bij wifi bv. CMD voer je in in je zoekvak linkonder je bureablad op de taakbalk.
 Typ daar je IP adres in van je game-pc (+ een naam), dit is voor de duidelijkheid een lokaal IP-adres uit de zgn. privereeks,
 iets in de trant van 192.168.2.x waarschijnlijk.
-Dit lokale prive-IP-adres kan je vinden door ipconfig in een opdrachtprompt-venster te typen. Het gaat hier om het zgn. IPv4 address.
+Deze tip vond ik gedeeltelijk op helpmij.nl met dank aan Tijs!
+
+experia box v10a:
+-voor klanten van KPN met een experia box V10a en Sagemcom box B12 waarschijnlijk http://192.168.2.254
+-kies poort forwarding ipv4
+-Bij experia box v10a poort forwarding ipv4: Vul hier je locale
+ip-adres in als LAN Host te verkrijgen met ipconfig in een CMD window bij wifi bv. CMD voer je in in je zoekvak linkonder je bureablad op de taakbalk.
+Typ daar je IP adres in van je game-pc (+ een naam), dit is voor de duidelijkheid een lokaal IP-adres uit de zgn. privereeks,
+iets in de trant van 192.168.2.x waarschijnlijk.
+-Dit lokale prive-IP-adres kan je vinden door ipconfig in een opdrachtprompt-venster te typen. Het gaat hier om het zgn. IPv4 address.
 Bij de experia box v10a: maak een extra protocol bij Application Configuration bv 'Net Memory' aan met protocol TCP en UDP, Start poort=1200, Eind poort = 1201,
 Start mapping poort =1200 en Eind mapping poort = 1201 .
-
-
 Je IP-adres van de router voor de buitenwereld, het publieke IP-adres, is dan te vinden door te surfen naar http://www.watismijnip.nl.
 Je tegenstander dient naar dit adres te verbinden als hij of zij ook KPN heeft. De verbinding is dan tot stand gekomen en je kan vervolgens spelen.
 
-Deze tip vond ik gedeeltelijk op helpmij.nl met dank aan Tijs!
+Sagemcom box B12:
+-kies Access Control
+-kies Port Forwarding
+-kies Add Rules Manually
+-maak een extra protocol bv 'Net Memory' aan met protocol TCP (en UDP evt.)
+-voer voor External Host in: Je IP-adres van de router voor de buitenwereld, het publieke IP-adres, is dan te vinden door te surfen naar http://www.watismijnip.nl.
+-voor voor Internal Host in: Dit lokale prive-IP-adres kan je vinden door ipconfig in een opdrachtprompt-venster te typen. Het gaat hier om het zgn. IPv4 address.
+-External port=1200-1201
+-Internal port=1200-1201
+-en zorg ervoor dat de Rule aan staat (enabled)
+
+
+
