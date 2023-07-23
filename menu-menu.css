@@ -10,7 +10,7 @@
    line-height:1.0;
 }
 .menu-menu ul {
-   position:absolute;
+   position:fixed ;
    top:-999em;
    width:10em; /* submenu item width - offest below must match */
 }
