@@ -116,7 +116,7 @@ ul.menu-menu li li li.sfHover ul {
    background:#003366;
 }
 .menu-menu li:hover, .menu-menu li.sfHover,
-/*.menu-menu a:focus,*/ .menu-menu a:hover, .menu-menu a:active { /* commented out 20-8-2012 by Hanno */
+.menu-menu a:focus, .menu-menu a:hover, .menu-menu a:active { /* commented out 20-8-2012 by Hanno */
    background:#99CCFF;
    outline:0;
 }
@@ -124,11 +124,11 @@ ul.menu-menu li li li.sfHover ul {
 .menu-menu li li a, .menu-menu li li a:visited { 
     color:#FFFFFF;
 }
-/*
+
 .menu-menu li li a:hover, .menu-menu li li a:active, .menu-menu li li a:focus { 
   color: #000000;
 } 
-*/ /* the above commented out 20-8-2012 by Hanno */
+ /* the above commented out 20-8-2012 by Hanno */
 /*** arrows **/
 .menu-menu a.sf-with-ul {
    padding-right:2.25em;
