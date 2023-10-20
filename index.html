@@ -28,7 +28,7 @@ function getCookie(cname) {
 function checkCookie() {
   let user = getCookie("username");
   if (user != "") {
-    alert("Welcome again " + user);alert("Did you donate already ?");
+    alert("Welcome again " + user);alert("Did you donate already via PayPal: paypal.me/telejazz ? Elsewise please do !");
   } else {
      user = prompt("Please donate via PayPal: paypal.me/HPondaag and then enter your name:","");
      if (user != "" && user != null) {
