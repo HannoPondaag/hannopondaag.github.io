@@ -28,9 +28,9 @@ function getCookie(cname) {
 function checkCookie() {
   let user = getCookie("username");
   if (user != "") {
-    alert("Welcome again " + user);alert("Did you donate already via PayPal: paypal.me/telejazz ? Elsewise please do ! This website uses coffeecup Software with an educational cookie, continue using this website and press Ok to accept a basic cookie, there's no log of data, your Privacy is safe and all Software virus free");
+    alert("Welcome again " + user);alert("Did you donate already via PayPal: paypal.me/telejazz ? Elsewise please do ! This website uses coffeecup Software with an educational basic cookie. Continue using this website and press OK to accept this cookie for the Welcome Message. There's no logging of data, your Privacy is safe and all Software virus free");
   } else {
-     user = prompt("Please donate via PayPal: paypal.me/HPondaag and then enter your name:","");
+     user = prompt("Please donate via PayPal: paypal.me/telejazz and then enter your name:","");
      if (user != "" && user != null) {
        setCookie("username", user, 30);
      }
