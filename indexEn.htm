@@ -2,21 +2,75 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div style='font-size: 1.0em;font-family: Arial;float:right;'><a href="https://hannopondaag.github.io" target='_top'><img src="dutchflag.png" /></a> <br></div>
+<!-- Style to set element float
+        to center -->
+        <style>
+            .Center {
+                width:200px;
+                height:200px;
+                position: fixed;
+                background-color: blue;
+                top: 50%;
+                left: 50%;
+                margin-top: -100px;
+                margin-left: -100px;
+            }
+        </style>
+        <script>
+function setCookie(cname,cvalue,exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
 
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
 
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+     user = prompt("Continue using this educational and entertaining website and press OK to accept a cookie for the Welcome Message and to go on. There's no logging of data, your Privacy is safe and all Software virus free. Do you consent to store a cookie to Welcome you ? Please enter your name:","");
+   
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
+  }
+}
+</script>
 
-
+</head><body onload=checkCookie()><div style="color: yellow;font-size: 0.6em;font-family: Arial;float:right;"><a href="https://hannopondaag.github.io/" target="_top"><img src="./dutchflag.png"></a> </div>
+    <nav>
     <ul class="menu-menu">
+            
      <li>
-        <a href="javascript:void(0)" class="header">Software</a>
+        <a href="javascript:void(0)" class="header">Menu Software</a>
             <ul>
-                <li><a href="https://hannopondaag.github.io/NetMemoryEnglish.htm">Net Memory</a></li>
-                <li><a href="https://hannopondaag.github.io/NetMemoryEnglish.htm#MemoryGameSeries">Memory Game Series</a></li>
-                <li><a href="https://hannopondaag.github.io/NetMemoryEnglish.htm#Mac">Net Memory for the Mac</a></li>
+                    <li><a href="https://hannopondaag.github.io/CustomSudokuEnglish.html">Custom Sudoku</a></li>
+                    <li><a href="https://hannopondaag.github.io/NetMemoryEnglish.htm#MemoryGameSeries">Net Memory Game Series Premium </a></li>
+                    <li><a href="https://hannopondaag.github.io/NetMemoryEnglish.htm">Net Memory .NET</a></li>
+        
+                <li><a href="https://hannopondaag.github.io/NetMemoryEnglish.htm#NetMemoryFree">Net Memory Free </a></li>
+                <li><a href="https://hannopondaag.github.io/NetMemoryEnglish.htm#NetMemoryQtAnimation">Net Memory Qt Animation </a></li>
+                <li><a href="https://hannopondaag.github.io/NetMemoryForTheMac.html">Net Memory for the Mac</a></li>
                 <li><a href="https://hannopondaag.github.io/NetMemoryEnglish.htm#MemoryGameWebGlSeries">Memory Game WebGl Series</a></li>
                 <li><a href="https://hannopondaag.github.io/NetConnect4.html">Net Connect 4</a></li>
-                <li><a href="https://hannopondaag.github.io/CustomSudokuEnglish.html">Custom Sudoku</a></li>
+                
                 <li><a href="https://hannopondaag.github.io/DefBingoEnglish.htm">DefBingo</a></li>
                 <li><a href="https://hannopondaag.github.io/SlidingTilesPuzzle.htm">Sliding Tiles Puzzles</a></li>
 <li><a href="https://hannopondaag.github.io/NetMastermind.html">Net Mastermind</a></li>
@@ -31,14 +85,14 @@
             </li>
            
         <li>
-            <a href="javascript:void(0)">Videos & photos</a>
+            <a href="javascript:void(0)">Menu Videos & photos</a>
             <ul>
                 <li class="first"><a href="https://hannopondaag.github.io/Videos.htm">Videos</a></li>
                 <li><a href="https://hannopondaag.github.io/Photos.htm">Photos</a></li>
             </ul>
 </li>
 <li>
-    <a href="javascript:void(0)">Research & Development </a>
+    <a href="javascript:void(0)">Menu Music </a>
    <ul>
        <li class="first"><a href="https://hannopondaag.github.io/JazzEnglish.htm">Jazz</a></li>
        <li><a href="https://hannopondaag.github.io/Classical.htm">Classical</a></li>
@@ -47,118 +101,109 @@
 </li>
         
     </ul>
-
+</nav>
     <title>Telejazz Home</title>
 
-    <style type="text/css">
+    
+      
+      <style type="text/css">
 
-        body {
-            background-image: url(floriade038.jpg);
-            background-repeat: no-repeat;
-            color: #ff9900;
-            background-color: #DE6038;
-            background-position-x: y-end;background-position-y: x-end;}
-            
-        
-        a {
-            color: rgb(255, 136, 0);
-        }
-
-            a:visited {
-                color: rgb(179, 0, 255);
-            }
-
-            a:hover {
-                color: #E04000;
-            }
-
-            a:active {
-                color: #FF0000;
-            }
+    body { background-image: url(floriade038.jpg);
+         background-repeat: no-repeat;
+         color: #ff9900;
+      background-color:#DE6038;
+      background-position: left;
+      background-size: auto;
+    }
+    a  { color: rgb(255, 153, 0); }
+    a:visited { color: rgba(0, 123, 255, 0.759); }
+    a:hover { color: #E04000; }
+    a:active { color: rgb(255, 153, 0); }
+    content {color: azure;}
     </style>
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="https://hannopondaag.github.io/css/menu-menu.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://hannopondaag.github.io/css/menu-menu.css" media="screen"><br>
     <!--<embed src="https://hannopondaag.github.io/Piece.mp3" hidden="True"> -->
-
-</head>
-<body>
-    
-   
-  
-    
+<br>
     
           <center>
       
-              <font size="4">
-                  <strong></strong></font><br><br>
-                  <font size="3"><strong><h1>Support Page of Net Memory, Memory Games & Four In A Row Games, Sliding Tiles Puzzles, Custom Sudoku and DefBingo</h1></strong><br>
+              
+                 <br><br><br>
+                  <strong><h1><div style ="color: white;">MS Store Support for Net Memory, Net Memory Game Series, Net Connect 4, Sliding Tiles Puzzles, Custom Sudoku & DefBingo</h1></strong>
+        <br>
                   
-    
           
+          
+         
         </center>
       
-          
+       
+                          
           <center>
             <a href="https://www.microsoft.com/en-us/p/memory-game-fruits/9nk64fvmrn3k?activetab=pivot:overviewtab"><img   WIDTH=386 HEIGHT=309
-                BORDER=0 src="2022-09-01.png" alt="Memory Games Fruit" style="max-width:100%;height:auto;top:50%;left: 19%;margin-left: auto;"><div style="color:#ff9900"><h1>Memory Game Fruits</h1></div></a><br>
+                BORDER=0 src="2022-09-01.png" alt="Memory Games Fruit" style="max-width:100%;height:auto;top:50%;left: 19%;margin-left: auto;"><div style ="color: white;"><h1>Memory Game Fruits</h1></div></a><br>
             <a href="https://www.microsoft.com/en-us/p/net-connect-4/9mvl9llq8k4d?activetab=pivot:overviewtab"><img   WIDTH=386 HEIGHT=309
-              BORDER=0 src="2021-04-06.png" alt="Net Connect 4" style="max-width:100%;height:auto;top:50%;left: 19%;margin-left: auto;"><div style="color:#ff9900"><h1>Net Connect 4</h1></div></a><br> 
+              BORDER=0 src="2021-04-06.png" alt="Net Connect 4" style="max-width:100%;height:auto;top:50%;left: 19%;margin-left: auto;"><div style ="color:white;"><h1>Net Connect 4</h1></div></a><br> 
               
               <a href="https://www.microsoft.com/nl-nl/p/custom-sudoku/9ns9twkq4c62?activetab=pivot:overviewtab"><img  WIDTH=386 HEIGHT=309
-              BORDER=0 src="2023-11-01.png" alt="Custom Sudoku" style="max-width:100%;height:auto;top:50%;left: 19%;margin-left: auto;"><div style="color:#ff9900"><h1>Custom Sudoku</h1></div></a><br>
+              BORDER=0 src="2023-09-11.png" alt="Custom Sudoku" style="max-width:100%;height:auto;top:50%;left: 19%;margin-left: auto;"><div style ="color: white;"><h1>Custom Sudoku</h1></div></a><br>
                   <a href="https://www.microsoft.com/en-us/p/schuifpuzzle/9n4x7svcz70k?activetab=pivot:overviewtab"><img  WIDTH=386 HEIGHT=309
-                    BORDER=0 src="2019-09-23.png" alt="Schuifpuzzle" style="max-width:100%;height:auto;right: -9.5%;margin-left: auto;"><div style="color:#ff9900"><h1>Schuifpuzzle (Lory)</div></h1></a><br>         
+        
+                    BORDER=0 src="2019-09-23.png" alt="Schuifpuzzle" style="max-width:100%;height:auto;right: -9.5%;margin-left: auto;"><div style ="color: white;"><h1>Schuifpuzzle(s)</div></h1></a>       
               </center>
               
               
               <center>
-                <div style="color:azure"
-                ><font size="3">info@telejazz.nl</font>
+                <div style="color:azure">
+                
+                       
+     <iframe src="https://free.timeanddate.com/clock/i8pq23th/n1302/tt0/tm1/ta1/tb4" frameborder="0" width="163" height="35"></iframe><br>
+     
                 </div>  
+                  
               </center> 
           
         </style><font size="3">
             <center>
               
-                  <a href="https://hyperfollow.com/hannopondaag">News: Biography of Hanno Pondaag</a> <img src="./Telejazz Home_files/qs_new.gif" alt="New!" width="31" height="16"> 
-
-              
+                  <a href="https://hyperfollow.com/hannopondaag"> Biography of Hanno Pondaag</a> <img src="./Telejazz Home_files/qs_new.gif" alt="New!" width="31" height="16"> 
               <p>
-              
               <div style="color:azure">
-              My music products are in the audiostreaming services
-            
-              <p>
-      
-        Last Update: Thursday 6th of July 2023<br></font></style> </div>
-      
-    
+              My music productions are in the audiostreaming services<br>
+        Last Update: Wednesday 1st of November 2023<br></font></style> </div>
       <p>
-     <iframe src="https://free.timeanddate.com/clock/i8pq23th/n1302/tt0/tm1/ta1/tb4" frameborder="0" width="163" height="35"></iframe><br>
+ <marquee scrollamount="4" scrolldelay="80" style= "font-family: Verdana;
+font-size: 14pt; letter-spacing: 1pt; border: 4px solid #DAF7A6; padding-left:
+4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px;
+background-color:#808080; font-style:italic; text-align:center;
+color:#FFFFFF" style="max-width:100%;height:auto;right: -9.5%;margin-left: auto;"> We keep the prices low. Don't call us, we call you. Custom Sudoku newest Update with optional Autosave every minute and renewed layout Design in the Microsoft Store and on www.xbox.com the official website of Xbox and in the Xbox store for Xbox Series X, Xbox Series S and Xbox One. New this update: fixed behaviour for the little box in the right bottom corner of the white 3x3 box in the right bottom corner of the playing Field.
+This update is with the right Puzzlenumber and Level displaying when saving is chosen and done. Steppers for control of the arrows. Direct Selecting for the Refresh/load from resources symbol. Autosave when closing or exitting the program. Endless and Ultimate Fun puzzling and playing for young and old. And this update is for existing customers too: please update/download it in the library of the Microsoft Store or remove the old version then (re) install. Hanno Pondaag is an official Microsoft Partner. info@telejazz.nl for all your questions and comments ! Please donate with PayPal: https://paypal.me/HPondaag and/or paypal.me/telejazz . www.telejazz.nl : supporter of charities like WWF, WFP World Food Program of the United Nations, de Hartstichting, Hersenstichting, the Vrienden van de Olifant: olifanten.org and Foodwatch  ! 
+ Coming up Next: a picture of the new Update in the Microsoft Store,  Xbox Store and on these Support Pages.</marquee>
 
-    </center>
 
-<center>
+    <!--
+                    <font size="3">info@telejazz.nl</font>
+      <p>
+     <iframe src="https://free.timeanddate.com/clock/i8pq23th/n1302/tt0/tm1/ta1/tb4" frameborder="0" width="163" height="35"></iframe>
+<p> -->
+    
+
+
   
     
-        <p>
+        <div style="color:azure">
         &copy; 2023 Hanno Pondaag
-   
+        </div>
 </center>
-<!--
-<script>
-          function callback() {
-              var url = "https://hannopondaag.github.io/Piece.mp3?cb=" + new Date().getTime();
-              var audio = new Audio(url);
-              audio.load();
-              audio.play();
-          }
-          callback();</script>
-        -->          
 
-  
+          
+
+  <center>
     
-</font><div id="coFrameDiv" style="height:0px;display:none;"><iframe id="coToolbarFrame" src="./Telejazz Home_files/placeholder.html" style="height: 0px; width: 100%; display: none;"></iframe></div></html>
+<div id="coFrameDiv" style="height:auto;display:none;"><iframe id="coToolbarFrame" src="./Telejazz Home_files/placeholder.html" style="height: auto; width: 100%; display: none;"></iframe></div></html>
+                  </font></center>
+        <div onload="checkCookie()"></div>
 </body>
