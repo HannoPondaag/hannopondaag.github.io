@@ -27,16 +27,7 @@
 </head><body><div style="color: yellow;font-size: 0.6em;font-family: Arial;float:right;"><a href="https://hannopondaag.github.io/indexEn.htm" target="_top"><img src="./Telejazz Home_files/ukflag.png"></a> </div>
   <title>Telejazz Media Company</title>
   <strong><h2>Telejazz Media Company</h2></strong>
-  <div id="audioDiv">
-    <audio onclick="playedOnce()" src="https://hannopondaag.github.io/merge_from_ofoct.mp3" type="audio/mp3" preload="auto" controls="controls" oncontextmenu="return false;">Audio could not be loaded.</audio>
-</div>
-  <script>
-    function playedOnce(){
-    var children = document.getElementById("audioDiv").getElementsByTagName('*');
-    for(var i = 0; i < children.length; i++){
-        children[i].disabled = true;
-    }
-      </script>
+  
   <nav>
     <ul class="menu-menu">
   <li class="first">
@@ -190,6 +181,16 @@ color:#FFFFFF" style="max-width:100%;height:auto;margin-left: auto;">telejazz.nl
             </div>
     </footer>
 </center>
+      <div id="audioDiv">
+    <audio onclick="playedOnce()" src="https://hannopondaag.github.io/merge_from_ofoct.mp3" type="audio/mp3" preload="auto" controls="controls" oncontextmenu="return false;">Audio could not be loaded.</audio>
+</div>
+  <script>
+    function playedOnce(){
+    var children = document.getElementById("audioDiv").getElementsByTagName('*');
+    for(var i = 0; i < children.length; i++){
+        children[i].disabled = true;
+    }
+      </script>
 <!--
 <script>
           function callback() {
