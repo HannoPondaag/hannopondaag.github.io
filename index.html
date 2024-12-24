@@ -28,8 +28,15 @@
   <title>Telejazz Media Company</title>
   <strong><h2>Telejazz Media Company</h2></strong>
   <div id="audioDiv">
-    <audio onclick="playedOnce()" src="sound.mp3" type="audio/mp3" preload="auto" controls="controls" oncontextmenu="return false;">Audio could not be loaded.</audio>
+    <audio onclick="playedOnce()" src="https://hannopondaag.github.io/merge_from_ofoct.mp3" type="audio/mp3" preload="auto" controls="controls" oncontextmenu="return false;">Audio could not be loaded.</audio>
 </div>
+  <script>
+    function playedOnce(){
+    var children = document.getElementById("audioDiv").getElementsByTagName('*');
+    for(var i = 0; i < children.length; i++){
+        children[i].disabled = true;
+    }
+      </script>
   <nav>
     <ul class="menu-menu">
   <li class="first">
