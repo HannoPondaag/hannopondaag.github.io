@@ -1,0 +1,4 @@
+t=0;a=68;
+for t in range (1,11):
+
+ print(t,'x',a,'=',t*a)
