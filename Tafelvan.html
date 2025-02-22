@@ -12,7 +12,7 @@ def function myFunction() {
 
   document.getElementById("demo").innerHTML = text;
   throw '';
-  window.stop();
+  
   }
 def async function fetchData() {
   return new Promise((resolve, reject) => {
@@ -27,7 +27,7 @@ def async function processData() {
   try {
     const data = await fetchData();
     console.log(data);
-myFunction();window.stop();
+    myFunction();
 
   } catch (error) {
     console.error(error);
@@ -49,9 +49,9 @@ myFunction();window.stop();
 <form action="">
   
   <div class="group">
-    <input type=number id="tafel">
+    <input type=number id="tafel" required />
     <button onclick="processData()">Click me</button>
-    <label>Required</label>
+    <label>Tafel</label>
   </div>
   
 </form>
