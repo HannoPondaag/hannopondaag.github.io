@@ -7,9 +7,15 @@
   
     
 <form>
-  <label for="tafel">De tafel van:</label>
-  <input type="number" id="tafel" name="tafel" min="0" required />
-  <input type="submit">
+  <div class="group">
+    <input type="number" />
+    <label>Normal</label>
+  </div>
+  <div class="group">
+    <input type="number" id="tafel" required />
+    <label>Required</label>
+  </div>
+  <input type="submit" />
 </form>
 
     
