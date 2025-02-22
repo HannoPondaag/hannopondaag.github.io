@@ -10,7 +10,7 @@
   
   <div class="group">
     <input type=number id="tafel">
-    <button onclick="myFunction()">Click me</button>
+    <button onclick="fetchData()">Click me</button>
     <label>Required</label>
   </div>
   
@@ -33,7 +33,27 @@ function myFunction() {
   document.getElementById("demo").innerHTML = text;
   throw '';
   }
+async function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const data = { name: 'John', age: 30 };
+      resolve(data);
+    }, 1000);
+  });
+}
 
+async function processData() {
+  try {
+    const data = await fetchData();
+    console.log(data);
+myFunction();
+
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+processData();
 
 </script>
 
