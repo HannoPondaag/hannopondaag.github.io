@@ -14,25 +14,9 @@ def function myFunction() {
   throw '';
   
   }
-def async function fetchData() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const data = { name: 'John', age: 30 };
-      resolve(data);
-    }, 1000);
-  });
-}
 
-def async function processData() {
-  try {
-    const data = await fetchData();
-    console.log(data);
-    myFunction();
 
-  } catch (error) {
-    console.error(error);
-  }
-}
+
 
 
 
@@ -50,7 +34,7 @@ def async function processData() {
   
   <div class="group">
     <input type=number id="tafel" required />
-    <button onclick="processData()">Click me</button>
+    <button href="#" onclick="myFunction()">Click me</button>
     <label>Tafel</label>
   </div>
   
