@@ -4,14 +4,21 @@
     <h1>De tafel van..
       
 
-<form action="/action_page.html">
+<form>
   <label for="tafel">De tafel van:</label>
   <input type="number" id="tafel" name="tafel" min="1">
   <input type="submit">
 </form>
       <script>
 try {
-  adddlert("Welcome guest!");
+  <p id="demo"></p>
+
+
+  
+let text = "";
+for (let i = 1;i<11;i++){ text +="    "+i+" x "+tafel+" = "+i*tafel+"<br>";
+document.getElementById("demo").innerHTML = text;}
+
 }
 catch(err) {
   document.getElementById("demo").innerHTML = err.message;
