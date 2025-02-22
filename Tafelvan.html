@@ -13,6 +13,7 @@
   </div>
   <div class="group">
     <input type="number" id="tafel">
+    <button onclick="myFunction()">Click me</button>
     <label>Required</label>
   </div>
   <input type="submit" />
@@ -25,17 +26,17 @@
 
 
   <script>
-async function myDisplay() {
-  let myPromise = new Promise(function(resolve, reject) {
-    resolve("i love you");
+function myFunction() {
+  
+    text = "yes";
 
                         
 
 
-  document.getElementById("demo").innerHTML = await myPromise;
+  document.getElementById("demo").innerHTML = text;
   }
 
-myDisplay();
+
 </script>
 
   
