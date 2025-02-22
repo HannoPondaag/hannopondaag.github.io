@@ -3,8 +3,8 @@
 <html>
   <head>
 <script>
-function myFunction() {
-  text = "yes";
+function myFunction(int lama) {
+  text = "yes"+lama;
   document.getElementById("demo").innerHTML = text;
 }
 
@@ -26,8 +26,8 @@ function myFunction() {
 <form>
   
   <div class="group">
-    <input type=number id="tafel" required />
-    <button href="#" onclick="myFunction()">Click me</button>
+    <input href="#" type=number id="tafel" required />
+    <button href="#" onclick="myFunction(tafel)">Click me</button>
     <label>Tafel</label>
   </div>
   
