@@ -1,5 +1,17 @@
 <!DOCTYPE html>
-
+<script>
+  if (location.hash.indexOf('reloaded') === -1) {
+  location.hash += 'reloaded';
+  location.reload();
+    $(document).ready(function(){    
+    if(document.URL.indexOf("#")==-1){ //Check if the current URL contains '#'
+        url = document.URL+"#"; // use "#". Add hash to URL
+        location = "#";
+        location.reload(true); //Reload the page
+    }
+});
+}
+    </script>
 <h1>Adding 'a' and 'b'</h1>
 <form>
   a: <input type="number" name="a" id="a"><br>
@@ -12,13 +24,7 @@
     var n = document.getElementById("b").value;
     var sum = m + n;
     alert(sum);
-    $(document).ready(function(){    
-    if(document.URL.indexOf("#")==-1){ //Check if the current URL contains '#'
-        url = document.URL+"#"; // use "#". Add hash to URL
-        location = "#";
-        location.reload(true); //Reload the page
-    }
-});
+    
   }
 </script>
 
