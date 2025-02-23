@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<script>
-  if (location.hash.indexOf('reloaded') === -1) {
-  location.hash += 'reloaded';
-  location.reload();
-    $(document).ready(function(){    
-    if(document.URL.indexOf("#")==-1){ //Check if the current URL contains '#'
-        url = document.URL+"#"; // use "#". Add hash to URL
-        location = "#";
-        location.reload(true); //Reload the page
-    }
-});
-}
-    </script>
-<h1>Adding 'a' and 'b'</h1>
-<form>
-  a: <input type="number" name="a" id="a"><br>
-  b: <input type="number" name="b" id="a"><br>
-  <button onclick="add()">Add</button>
-</form>
-<script>
-  function add() {
-    var m = document.getElementById("a").value;
-    var n = document.getElementById("b").value;
-    var sum = m + n;
-    alert(sum);
-    
-  }
-</script>
 
+  
+    
+
+import { useState } from "react";
+import ReactDOM from 'react-dom/client';
+
+function MyForm() {
+  const [name, setName] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`The name you entered was: ${name}`);
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>Enter your name:
+        <input 
+          type="text" 
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </label>
+      <input type="submit" />
+    </form>
+  )
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<MyForm />);
+
+              
+⬤ ⬤ ⬤localhost:3000
   </body>
   </html>
   
