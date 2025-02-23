@@ -27,12 +27,19 @@ function myFunction() {
   
 
     <input href="#" type=number id="tafel" required />
-    <button href="#" onclick="myFunction()">Click me /</button>
+    <button href="#" type=number id="tafel" onclick="myFunction()">Click me <required /></button>
     
   
   
 </form>
-
+      <script>
+      if (location.hash.indexOf('reloaded') === -1) {
+  location.hash += 'reloaded';
+  location.reload();
+      
+}
+        </script>
+      <textarea>88</textarea>
     
    
 
