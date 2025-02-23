@@ -1,63 +1,19 @@
 <!DOCTYPE html>
 
-<html>
-  <head>
-<script>
-function myFunction() {
-
-    
-text = "x ";
-document.getElementById("demo").innerHTML = text;
-  
-}
-
-
-
-
-
-
-</script>
-
-    
-  </head>
-  <body>
-    <h1>De tafel van..
-      
-
-  
-    
+<h1>Adding 'a' and 'b'</h1>
 <form>
-  
-
-    <input href="#" type=number id="tafel" required />
-    <button href="#" onclick="myFunction()">Click me <required /></button>
-    
-  
-  
+  a: <input type="number" name="a" id="a"><br>
+  b: <input type="number" name="b" id="a"><br>
+  <button onclick="add()">Add</button>
 </form>
-      <script>
-      if (location.hash.indexOf('reloaded') === -1) {
-  location.hash += 'reloaded';
-  location.reload();
-      
-}
-        </script>
-      
-    
-   
-
-  <p id="demo"></p>
-      
-
-
-  
-  
-  
-
-
-
-    </h1>
-
+<script>
+  function add() {
+    var m = document.getElementById("a").value;
+    var n = document.getElementById("b").value;
+    var sum = m + n;
+    alert(sum);
+  }
+</script>
   </body>
   </html>
   
