@@ -12,8 +12,16 @@
     var n = document.getElementById("b").value;
     var sum = m + n;
     alert(sum);
+    $(document).ready(function(){    
+    if(document.URL.indexOf("#")==-1){ //Check if the current URL contains '#'
+        url = document.URL+"#"; // use "#". Add hash to URL
+        location = "#";
+        location.reload(true); //Reload the page
+    }
+});
   }
 </script>
+
   </body>
   </html>
   
