@@ -1,34 +1,14 @@
 <!DOCTYPE html>
+<html>
+<body>
 
-  <script>
-    
+<form action="welcome_get.php" method="GET">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</form>
 
-
-function MyForm() {
-  const [name, setName] = useState("");
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    alert(`The name you entered was: ${name}`);
-  }
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <label>Enter your name:
-        <input 
-          type="text" 
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-      </label>
-      <input type="submit" />
-    </form>
-  )
-}
-
-
-
-            </script>
-  </body>
-  </html>
+</body>
+</html> 
   
+ 
