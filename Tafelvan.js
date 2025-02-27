@@ -1,10 +1,10 @@
 //Tafel van X functionaliteit
 
-const textBox=document.getElementById("textBox").value;
+const textBox=document.getElementById("textBox");
 const result=document.getElementById("result");
 const number=document.getElementById("number")
 function tafelvan (){
   for (let i=1;i<11;i++){
-    result.textContent = i + "x" + number + "=" +value(i*textBox);
+    result.textContent = i + "x" + number + "=" +i*number;
 }
 
