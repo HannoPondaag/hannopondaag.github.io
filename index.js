@@ -1,14 +1,15 @@
-//Tafel van X functionaliteit
+//TABLE OF X PROGRAM
 
 const textBox = document.getElementById("textBox");
-const result = document.getElementById("result");
 const toResult = document.getElementById("toResult");
-let waarde;
+const result = document.getElementById("result");
+
+let int waarde;
 function tafelvan(){
 
-  waarde=2;
+   let int waarde = 2;
   if(toResult.checked){
-    document.write(waarde);
+    result.textContent = waarde;
   }
 }
 
