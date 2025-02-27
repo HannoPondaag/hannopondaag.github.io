@@ -6,11 +6,12 @@ const result = document.getElementById("result");
 
 
 function tafelvan(){
-
+   let text = "";
    for(let i=0;i<10;i++){
        if(toResult.checked){
-      result.textContent  += "Dummy" + "<br>";
+      text += "Dummy" + "<br>";
   }
    }
+   document.getElementById("result").innerHTML = text;
 }
 
