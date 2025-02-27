@@ -1,7 +1,7 @@
 //Tafel van X functionaliteit
 
-const textBox=document.getElementsById("textBox");
-const result=document.getElementsById("result");
+
+const result = document.getElementById("result");
 
 function tafelvan (){
   
