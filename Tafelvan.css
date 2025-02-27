@@ -1,6 +1,6 @@
 body{
   font-family: Arial, sans-serif;
-  font-size: 2.0em;
+  font-size: 1.0em;
   
 }
 
@@ -17,7 +17,7 @@ form{
 
 #textBox{
   font-size: 2.0em;
-  max-width: 350px;
+  max-width: 133px;
   font-color: black;
 }
 
