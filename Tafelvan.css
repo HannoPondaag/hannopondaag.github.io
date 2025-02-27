@@ -5,12 +5,12 @@ h1{
   color:blue;
 }
 form{
-  
-}  
-#textBox{
   text-align:center;
   font-size: 2em;
   max-width: 350px;
+}  
+#textBox{
+  
 }
 button{
   cursor:pointer;
