@@ -6,10 +6,12 @@ h1{
 }
 form{
   text-align:center;
-  max-width: 350px;
+  
 }  
 #textBox{
   font-size: 2em;
+  max-width: 350px;
+  font-color:black;
 }
 button{
   cursor:pointer;
