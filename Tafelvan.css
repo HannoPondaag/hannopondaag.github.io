@@ -1,5 +1,7 @@
 body{
   font-family: Arial, sans-serif;
+  font-size: 2.0em;
+  
 }
 
 h1{
@@ -7,13 +9,14 @@ h1{
 }
 
 form{
-  font-size: 2em;
+  font-size: 2.0em;
   text-align: center;
+  max-width: 68%;
   
 }
 
 #textBox{
-  font-size: 2em;
+  font-size: 2.0em;
   max-width: 350px;
   font-color: black;
 }
