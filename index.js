@@ -9,7 +9,7 @@ function tafelvan(){
 
    for(let i=0;i<10;i++){
        if(toResult.checked){
-      result.textContent  += "Dummy" +"<br>";
+      result.textContent  += "Dummy" + "<br>";
   }
    }
 }
