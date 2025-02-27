@@ -3,7 +3,7 @@
 const textBox = document.getElementById("textBox");
 const result = document.getElementById("result");
 
-function tafelvan (){
+function tafelvan(){
   
     result.textContent = "poesje";
 }
