@@ -3,11 +3,12 @@
 const textBox = document.getElementById("textBox");
 const result = document.getElementById("result");
 const toResult = document.getElementById("toResult");
-
+let waarde;
 function tafelvan(){
-  
+
+  waarde=2;
   if(toResult.checked){
-    result.textContent = "poesje";
-}
+    document.write(waarde);
+  }
 }
 
