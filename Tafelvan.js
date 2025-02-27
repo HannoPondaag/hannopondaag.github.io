@@ -2,9 +2,9 @@
 
 const textBox=document.getElementById("textBox");
 const result=document.getElementById("result");
-const number=document.getElementById("number")
+const value=document.getElementById("value")
 function tafelvan (){
   for (let i=1;i<11;i++){
-    result.textContent = i + "x" + number + "=" +i*number;
+    result.textContent = i + "x" + value + "=" +i*value;
 }
 
