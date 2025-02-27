@@ -1,8 +1,12 @@
 body{
   font-family: Arial, sans-serif;
 }
-#textBox{
+form{
   
+}  
+#textBox{
+  text-align:center;
+font-size: 2em;
 }
 button{
   cursor:pointer;
