@@ -7,10 +7,10 @@ const result = document.getElementById("result");
 
 function tafelvan(){
 
-   for(let i=1;i<11;i++){
+   
        if(toResult.checked){
-      result.textContent = "Dummy" + <br>;
+      result.textContent = "Dummy";
   }
-  }
+  
 }
 
