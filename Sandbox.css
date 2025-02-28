@@ -1,5 +1,5 @@
 body{
-  background-color: white;
+  
   font-family: Arial, sans-serif;
   font-size: 1.0em;
   
@@ -19,7 +19,7 @@ form{
 #textBox{
   font-size: 1.0em;
   max-width: 133px;
-  font-color: black;
+  color: black;
 }
 
 button{
