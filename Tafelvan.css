@@ -23,8 +23,10 @@ form{
 }
 
 button{
-  background-color: green;
-  color: white;
+  background-color: light-grey;
+  text-color: black;
+  border: rounded;
+  
   font-size: 1.0em;
   cursor: pointer;
 }
@@ -34,6 +36,6 @@ button:hover{
 }
 
 #result{
-  font-size: 1.0em;
+  font-size: 1.75em;
   font-weight: bold;
 }
