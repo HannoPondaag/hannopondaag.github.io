@@ -23,8 +23,9 @@ form{
 }
 
 button{
-  background-color: azure;;
-  color: white;
+  background-color: azure;
+  text-color: black;
+  color: azure;
   font-size: 1.0em;
   cursor: pointer;
 }
