@@ -23,8 +23,9 @@ form{
 }
 
 button{
-  background-color: white;
+  background-color: light-grey;
   text-color: black;
+  border-radius: 50%;
   
   font-size: 1.0em;
   cursor: pointer;
