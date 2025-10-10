@@ -247,25 +247,25 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
           <strong><h1><div style ="color: white;">Microsoft Store Support van Net Memory Games, Net <u>Memory Game</u> Series, Net Connect 4, Custom Sudoku</h1></strong>
 </center>
    <div class="slideshow-container">
-<!-- Full-width images with number and caption text -->
-  
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 6</div>
   <img src="2025-10-09.png" style="width:100%">
   <div class="text" style="color:Black;">Chess Set Christmas Edition</div>
 </div>
+
 <div class="mySlides fade">
   <div class="numbertext">2 / 6</div>
   <img src="2023-11-01.png" style="width:100%">
   <div class="text" style="color:Black;">Custom Sudoku</div>
 </div>
-   <div class="mySlides fade">
+
+<div class="mySlides fade">
   <div class="numbertext">3 / 6</div>
-  <img src="2021-04-06.png" style="width:100%">
-  <div class="text" style="color:Black;">Net Connect 4</div>
+<img src="2021-04-06.png" style="width:100%">
+  <div class="text">Net Connect 4</div>
 </div>
- <div class="mySlides fade">
+  <div class="mySlides fade">
     <div class="numbertext">4 / 6</div>
     <img src="2019-09-23.png" style="width:100%">
     <div class="text" style="color:Black;">Schuifpuzzle</div>
@@ -280,46 +280,47 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
     <img src="2022-09-01.png" style="width:100%">
     <div class="text" style="color:Black;">Memory Game Fruits</div>
   </div>        
- <a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+ <a class="prev" onclick="plusSlides(-1)"></a>
+<a class="next" onclick="plusSlides(1)"></a>
 
 </div>
 <br>
-   <div style="text-align:center">
+  <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span>
   <span class="dot" onclick="currentSlide(4)"></span> 
   <span class="dot" onclick="currentSlide(5)"></span> 
   <span class="dot" onclick="currentSlide(6)"></span>  
-</div>
- <script>
-let slideIndex = 1;
-showSlides(slideIndex);
+</div>            
+<br>
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
- function currentSlide(n) {
-  showSlides(slideIndex = n);
-}   
-function showSlides(n) {
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2800); // Change image every 2 seconds
 }
-</script>      
- <br>                         
+</script>
+   <br>                         
   <p></p>        
 <center>                        
                        <iframe src="https://static.rolex.com/clocks/2020/explorers_all_HTML_270x90/rolex.html#Your_Time" frameborder="0" width="400" height="80"></iframe><br>
