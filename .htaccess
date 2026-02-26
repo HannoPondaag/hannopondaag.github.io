@@ -1,1 +1,4 @@
-<
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^telejazz\.nl$ [NC]
+RewriteRule ^(.*)$ https://hannopondaag.github.io/index_UK.htm [R=301,L]
+
